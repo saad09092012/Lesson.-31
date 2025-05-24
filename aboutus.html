@@ -48,8 +48,34 @@
 
     
     I am inside aboutus page
+    <div>
+        <img class="mySlide" src="Gaming.jpg" style="height:500px;width:400px">
+        <img class="mySlide" src="Gaming 2.jpg" style="height:500px;width:400px">
+        <img class="mySlide" src="Gaming 3.jpg" style="height:500px;width:400px">
+        <img class="mySlide" src="Gaming 4.jpg" style="height:500px;width:400px">
+    </div>
 
+    <script>
+        var myIndex = 0;
+        carousel();
 
+        // Automatic Slideshow - change image every 3 seconds
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlide");
+
+            for (i = 0; i < x.length; i++) {
+                // #executed for only 0 1 2 
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            //myindex=0,1,2,3 for index 3 come back again to 1
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+            //calling function every 3 seconds
+        }
+</script>
 </body>
-
 </html>
