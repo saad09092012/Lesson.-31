@@ -45,7 +45,33 @@
         <a class="active" href="Contact.html">Contact Us</a>
         <a href="Explore.html">Explore</a>
     </div>
-    
+    <body>
+        <h2>JavaScript Arrays</h2>
+        <p id="demo"></p>
+        <script>
+            var car = [
+                "Coding",
+                "Magic",
+                "learn",
+                "Start",
+                "run",
+            ];
+            document.getElementById("demo").innerHTML = car[4];
+        </script>
+        <h2>JavaScript Array Methods</h2>
+        <h2>join() and pop()</h2>
+        <p>The join() methods joins array into a string and the pop() methods removes the last element from the array</p>
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("myjoin").innerHTML = fruits.join(" * ");
+            document.getElementById("myfirstpop").innerHTML = fruits;
+            fruit.pop();
+            document.getElementById("mysecondpop").innerHTML = fruits;
+        </script>
+    </body>
 
 
 </body>
